@@ -5,11 +5,15 @@
         "This file is @generated automatically"
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     "content-hash": "ff46d37b1a8e0acf10fd24a24f604239",
 =======
     "hash": "cf07ceb9e8881de0c8642436f2b7a2d9",
     "content-hash": "2a3db6e583ebc6567f5eaa12edd574b7",
 >>>>>>> Ayel
+=======
+    "content-hash": "0d32d03a4925b33a108a88d3b6d4e16d",
+>>>>>>> f5d11442f640de664aebd3c8962cc91e2c0d40b7
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -367,7 +371,11 @@
                 "framework",
                 "laravel"
             ],
+<<<<<<< HEAD
             "time": "2017-03-02 14:41:40"
+=======
+            "time": "2017-03-21T19:34:41+00:00"
+>>>>>>> f5d11442f640de664aebd3c8962cc91e2c0d40b7
         },
         {
             "name": "laravel/tinker",

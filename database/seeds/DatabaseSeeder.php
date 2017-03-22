@@ -12,6 +12,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
+/*<<<<<<< HEAD
 
         $user = User::create(array(
 			'username' => 'admin2',
@@ -22,5 +23,12 @@ class DatabaseSeeder extends Seeder
         $userrole = UserRole::create(array(
 
         	))
+=======
+        DB::table('stations')->insert([
+            'name' => str_random(10),
+            'email' => str_random(10).'@gmail.com',
+            'password' => bcrypt('secret'),
+        ]);
+>>>>>>> f5d11442f640de664aebd3c8962cc91e2c0d40b7*/
     }
 }
