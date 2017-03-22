@@ -1,14 +1,31 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('content')
+<!--================================================================================
+  Item Name: Materialize - Material Design Admin Template
+  Version: 1.0
+  Author: GeeksLabs
+  Author URL: http://www.themeforest.net/user/geekslabs
+================================================================================ -->
 
-<div id="map" style="width:100%;height:565px">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
+    <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
+    <title>Hydromet Station Maintenance System</title>
 
-</div>
+    <!-- Favicons-->
+    <link rel="icon" href="images/favicon/icon-32x32.png" sizes="32x32">
+    <!-- Favicons-->
+    <link rel="apple-touch-icon-precomposed" href="images/favicon/icon-152x152.png">
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#00bcd4">
+    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+    <!-- For Windows Phone -->
 
-<<<<<<< HEAD
-@endsection
-=======
 
     <!-- CORE CSS-->    
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
@@ -25,11 +42,11 @@
 
 <body>
     <!-- Start Page Loading -->
-    <div id="loader-wrapper">
+     <!--<div id="loader-wrapper">
         <div id="loader"></div>        
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
-    </div>
+    </div>-->
     <!-- End Page Loading -->
 
     <!-- //////////////////////////////////////////////////////////////////////////// -->
@@ -127,8 +144,24 @@
             <!-- //////////////////////////////////////////////////////////////////////////// -->
         <!-- main activity goes here -->
             
-            <div id="map" style="width:100%;height:565px">
+            <nav>
+                <div id="home" class="toggle">
+                    <ul class="tabs tabs-transparent">
+                        <li class="tab"><a class="addReport" href="#addReport">Add Report</a></li>
+                        <li class="tab"><a class="myReport" href="#myReport">My Reports</a></li>
+                        <li class="tab"><a href="#viewReport">View All Reports</a></li>
+                    </ul>
+                </div>
+            </nav>
 
+            <div id="addReport" class="toggle" style="padding:5%">
+                @include('add_report')
+            </div>
+            <div id="myReport" class="toggle" style="padding:5%">
+            my
+            </div>
+            <div id="viewReport" class="toggle" style=" padding:5%">
+                @include('view_report')
             </div>
 
         <!-- main activity ends here -->
@@ -141,7 +174,7 @@
     <!-- //////////////////////////////////////////////////////////////////////////// -->
 
     <!-- START FOOTER -->
-    <footer class="page-footer">
+ <!--   <footer class="page-footer">
         
         <div class="footer-copyright">
             <div class="container">
@@ -149,7 +182,7 @@
                 <span class="right"> Design and Developed by <a class="grey-text text-lighten-4" href="http://geekslabs.com/">GeeksLabs</a></span>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- END FOOTER -->
 
 
@@ -192,4 +225,3 @@
 </body>
 
 </html>
->>>>>>> Ayel
