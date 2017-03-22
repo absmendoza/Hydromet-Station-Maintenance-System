@@ -15,21 +15,26 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
     <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
-    <title>Hydromet Station Maintenance System</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Favicons-->
-    <link rel="icon" href="images/favicon/icon-32x32.png" sizes="32x32">
+    <link rel="icon" href="{{ asset('images/favicon/icon-32x32.png') }}" sizes="32x32">
     <!-- Favicons-->
-    <link rel="apple-touch-icon-precomposed" href="images/favicon/icon-152x152.png">
+    <link rel="apple-touch-icon-precomposed" href="{{ asset('images/favicon/icon-152x152.png') }}">
     <!-- For iPhone -->
     <meta name="msapplication-TileColor" content="#00bcd4">
-    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+    <meta name="msapplication-TileImage" content="{{ asset('images/favicon/mstile-144x144.png') }}">
     <!-- For Windows Phone -->
 
 
     <!-- CORE CSS-->    
+<<<<<<< HEAD
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+=======
+    <link href="{{ asset('css/materialize.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{{ asset('css/style.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
+>>>>>>> Abby
 
 
     <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->    
@@ -123,9 +128,13 @@
 </div>
     </center>
 
+<<<<<<< HEAD
 
 
  <!-- ================================================
+=======
+    <!-- ================================================
+>>>>>>> Abby
     Scripts
     ================================================ -->
     
@@ -136,9 +145,14 @@
     <!--scrollbar-->
     <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
        
+<<<<<<< HEAD
 
      <!--plugins.js - Some Specific JS codes for Plugin Settings-->
     <script type="text/javascript" src="js/plugins.js"></script>
+=======
+    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+    <script type="text/javascript" src="{{ asset('js/plugins.js') }}"></script>
+>>>>>>> Abby
 
 </body>
 

@@ -18,25 +18,23 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Favicons-->
-    <link rel="icon" href="images/favicon/icon-32x32.png" sizes="32x32">
+    <link rel="icon" href="{{ asset('images/favicon/icon-32x32.png') }}" sizes="32x32">
     <!-- Favicons-->
-    <link rel="apple-touch-icon-precomposed" href="images/favicon/icon-152x152.png">
+    <link rel="apple-touch-icon-precomposed" href="{{ asset('images/favicon/icon-152x152.png') }}">
     <!-- For iPhone -->
     <meta name="msapplication-TileColor" content="#00bcd4">
-    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+    <meta name="msapplication-TileImage" content="{{ asset('images/favicon/mstile-144x144.png') }}">
     <!-- For Windows Phone -->
 
 
     <!-- CORE CSS-->    
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
-
+    <link href="{{ asset('css/materialize.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{{ asset('css/style.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
 
     <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->    
-    <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
-
+    <link href="{{ asset('js/plugins/perfect-scrollbar/perfect-scrollbar.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{{ asset('js/plugins/jvectormap/jquery-jvectormap.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="{{ asset('js/plugins/chartist-js/chartist.min.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
 
 </head>
 <body class="white">
@@ -63,7 +61,6 @@
                     <div class="panel-body">
                         <form class="login-form" role="form" method="POST" action="{{ route('login') }}">
                             {{ csrf_field() }}
-
                             <div class="row margin{{ $errors->has('email') ? ' has-error' : '' }}">
                                     <div class="input-field col s12">
                                         <i class="mdi-social-person-outline prefix"></i>
@@ -114,7 +111,6 @@
                                   <p class="margin left-align medium-small"><a href="{{ route('password.request') }}">Forgot password ?</a></p>
                               </div>       
                             </div>
-
                         </form>
                     </div>
                 </div>
@@ -123,23 +119,18 @@
     </div>
     </center>
 
-
-
- <!-- ================================================
+    <!-- ================================================
     Scripts
     ================================================ -->
     
     <!-- jQuery Library -->
-    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>    
+    <script type="text/javascript" src="{{ asset('js/jquery-1.11.2.min.js') }}"></script>    
     <!--materialize js-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="{{ asset('js/materialize.min.js') }}"></script>
     <!--scrollbar-->
-    <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script type="text/javascript" src="{{ asset('js/plugins/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
        
-
      <!--plugins.js - Some Specific JS codes for Plugin Settings-->
-    <script type="text/javascript" src="js/plugins.js"></script>
-
+    <script type="text/javascript" src="{{ asset('js/plugins.js') }}"></script>
 </body>
-
 </html>
