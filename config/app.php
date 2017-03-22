@@ -176,13 +176,6 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
-<<<<<<< HEAD
-        /*
-         * Laravel Collective
-         */
-=======
->>>>>>> Ayel
         Collective\Html\HtmlServiceProvider::class,
 
     ],
