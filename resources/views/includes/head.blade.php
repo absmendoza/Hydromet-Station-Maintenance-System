@@ -7,19 +7,17 @@
 <title>{{ config('app.name', 'Laravel') }}</title>
 
 <!-- Favicons-->
-<link rel="icon" href="images/favicon/icon-32x32.png" sizes="32x32">
+<link rel="icon" href="{{ asset('images/favicon/icon-32x32.png') }}" sizes="32x32">
 <!-- Favicons-->
-<link rel="apple-touch-icon-precomposed" href="images/favicon/icon-152x152.png">
+<link rel="apple-touch-icon-precomposed" href="{{ asset('images/favicon/icon-152x152.png') }}">
 <!-- For iPhone -->
 <meta name="msapplication-TileColor" content="#00bcd4">
-<meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+<meta name="msapplication-TileImage" content="{{ asset('images/favicon/mstile-144x144.png') }}">
 <!-- For Windows Phone -->
-
 
 <!-- CORE CSS-->    
 <link href="{{ asset('css/materialize.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
 <link href="{{ asset('css/style.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
-
 
 <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->    
 <link href="{{ asset('js/plugins/perfect-scrollbar/perfect-scrollbar.css') }}" type="text/css" rel="stylesheet" media="screen,projection">

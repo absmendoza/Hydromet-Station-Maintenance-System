@@ -1,4 +1,3 @@
-<!-- start header nav-->
 <div class="navbar-fixed">
     <nav class="cyan">
         @if (Route::has('login'))
