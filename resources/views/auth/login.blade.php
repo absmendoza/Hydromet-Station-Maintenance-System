@@ -15,7 +15,7 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
     <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
-    <title>Hydromet Station Maintenance System</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Favicons-->
     <link rel="icon" href="images/favicon/icon-32x32.png" sizes="32x32">
