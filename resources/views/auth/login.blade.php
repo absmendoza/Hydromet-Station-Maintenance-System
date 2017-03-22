@@ -26,7 +26,6 @@
     <meta name="msapplication-TileImage" content="{{ asset('images/favicon/mstile-144x144.png') }}">
     <!-- For Windows Phone -->
 
-
     <!-- CORE CSS-->    
     <link href="{{ asset('css/materialize.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="{{ asset('css/style.css') }}" type="text/css" rel="stylesheet" media="screen,projection">
