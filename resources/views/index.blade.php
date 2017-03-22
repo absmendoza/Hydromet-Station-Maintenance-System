@@ -118,21 +118,37 @@
                     </li>
                     <li class="bold"><a href="/" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Home </a>
                     </li>
-                    <li class="bold"><a href="app-email.html" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i> Mailbox <span class="new badge">4</span></a>
+
+                    @if (Route::has('login'))
+                    @if (Auth::check())
+                    <li class="bold"><a href="#" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i> Calendar</a>
+                    <li class="bold"><a class="waves-effect waves-cyan"><i class="mdi-action-announcement"></i> Notifications <span class="new badge">1</span></a>
                     </li>
+                    <li class="bold"><a class="waves-effect waves-cyan"><i class="mdi-editor-insert-chart"></i> Sensor Statistics</a>
+                    </li>
+                    <li class="bold"><a class="waves-effect waves-cyan" href="maintenanceReps"><i class="mdi-editor-insert-comment"></i> Maintenance Reports</a>
+                    </li>
+                    <li class="li-hover"><div class="divider"></div></li>
+                    <li class="li-hover"><p class="ultra-small margin more-text">MORE</p></li>
+                    <li><a class="waves-effect waves-cyan" href="#"><i class="#"></i> User Activity</a>
+                    </li>
+                    <li><a class="waves-effect waves-cyan" href="#"><i class="#"></i> Help</a>
+                    </li>
+                    @endif
+                    @endif
                 </ul>
                 <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only darken-2"><i class="mdi-navigation-menu" ></i></a>
             </aside>
             <!-- END LEFT SIDEBAR NAV-->
 
             <!-- //////////////////////////////////////////////////////////////////////////// -->
-            <!-- main activity goes here -->
+        <!-- main activity goes here -->
             
             <div id="map" style="width:100%;height:565px">
 
             </div>
 
-            <!-- main activity ends here -->
+        <!-- main activity ends here -->
             <!-- //////////////////////////////////////////////////////////////////////////// -->
         </div>
         <!-- END WRAPPER -->
