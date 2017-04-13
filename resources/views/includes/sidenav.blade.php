@@ -23,7 +23,7 @@
                             </form>
                         </li>
                     </ul>
-                    <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">{{ Auth::user()->name }}<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                    <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">{{ Auth::user()->firstname }} {{ Auth::user()->lastname }}<i class="mdi-navigation-arrow-drop-down right"></i></a>
                     <p class="user-roal">Administrator</p>
                 </div>
             </div>
@@ -36,7 +36,7 @@
         </li>
         <li class="bold"><a class="waves-effect waves-cyan" href="maintenanceReps"><i class="mdi-editor-insert-comment"></i> Maintenance Reports</a>
         </li>
-        <li class="bold"><a class="waves-effect waves-cyan" href="viewUsers"><i class="mdi-action-account-box"></i>Users</a>
+        <li class="bold"><a class="waves-effect waves-cyan" href="{{ route('user_list') }}"><i class="mdi-action-account-box"></i>Users</a>
         </li>
         <li class="li-hover"><div class="divider"></div></li>
         <li class="li-hover"><p class="ultra-small margin more-text">MORE</p></li>

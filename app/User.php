@@ -8,6 +8,35 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
     use Notifiable;
+    public function roles()
+    {
+        return $this->belongsToMany('App\Role', 'user_role', 'user_id', 'role_id'); // many-to-many user_role correspondence
+                                                                                    // foreign key: user_id
+    }
+
+    public function hasAnyRole($roles)
+    {
+        if (is_array($roles)) {
+            foreach($roles as $role) { // check if $this has all of the roles
+                if ($this->hasRole($role)) { 
+                    return true;
+                }
+            }
+        } else {
+            if ($this->hasRole($role)) {
+                return true;
+            }
+        }
+        return false; // doesnt have any of the roles
+    }
+
+    public function hasRole($role) // check if a user has a role
+    {
+        if ($this->roles()->where('name', $role)->first()) {
+            return true;
+        }
+        return false;
+    }
 
     /**
      * The attributes that are mass assignable.
@@ -15,7 +44,12 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'emp_id',
+        'firstname', 
+        'lastname', 
+        'email', 
+        'contact_num',
+        'password',
     ];
 
     /**
