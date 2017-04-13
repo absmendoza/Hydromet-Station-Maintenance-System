@@ -13,8 +13,10 @@
 
 </head>
 <body class="white">
+	<!--
 	@include('includes.loading')
-
+	-->
+	
 	<center>
 	<div class="white loaded" style="width: 301px; padding: 25px 0">
 		<div id="login-page" class="row">
