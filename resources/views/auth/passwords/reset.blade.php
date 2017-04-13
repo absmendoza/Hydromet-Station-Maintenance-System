@@ -91,21 +91,7 @@
         </div>
     </div>
     </center>
-
-    <!-- ================================================
-    Scripts
-    ================================================ -->
     
-    <!-- jQuery Library -->
-    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>    
-    <!--materialize js-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <!--scrollbar-->
-    <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-       
-    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
-    <script type="text/javascript" src="js/plugins.js"></script>
-    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
-    <script type="text/javascript" src="{{ asset('js/plugins.js') }}"></script>
+    @include('includes.end')
 </body>
 </html>

@@ -1,20 +1,32 @@
 @extends('layouts.app')
 
 @section('content')
-    <table>
+    <div class="row">
+  <div id="admin" class="col s12">
+    <div class="card material-table">
+      <div class="table-header">
+        <span class="table-title">Material Datatable</span>
+        <div class="actions">
+          <a href="#add_users" class="modal-trigger waves-effect btn-flat nopadding"><i class="material-icons">person_add</i></a>
+          <a href="#" class="search-toggle waves-effect btn-flat nopadding"><i class="material-icons">search</i></a>
+        </div>
+      </div>
+      <table id="datatable">
         <thead>
-        <th>Employee ID</th>
-        <th>Name</th>
-        <th>E-Mail</th>
-        <th>Contact Number</th>
-        <th>User</th>
-        <th>Author</th>
-        <th>Admin</th>
-        <th></th>
+        <tr>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>E-Mail</th>
+            <th>Contact Number</th>
+            <th>User</th>
+            <th>Author</th>
+            <th>Admin</th>
+            <th></th>
+        </tr>
         </thead>
         <tbody>
         @foreach($users as $user)
-            <tr>
+          <tr>
                 <form action="{{ route('user_list.assign') }}" method="post">
                     <td>{{ $user->emp_id }}</td>
                     <td>{{ $user->firstname }} {{ $user->lastname }}</td>
@@ -30,4 +42,7 @@
         @endforeach
         </tbody>
     </table>
+    </div>
+  </div>
+</div>
 @endsection
