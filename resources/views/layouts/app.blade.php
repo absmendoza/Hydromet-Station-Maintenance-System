@@ -13,7 +13,9 @@
 </head>
 
 <body>
+    <!-- Uncomment below to put loading chorva
     @include('includes.loading')
+    -->
 
     <header id="header" class="page-topbar">
         @include('includes.header')

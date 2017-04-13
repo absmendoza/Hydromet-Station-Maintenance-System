@@ -28,6 +28,22 @@
                 </div>
             </div>
         </li>
+        <li class="bold"><a href="/" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Home </a></li>
+        <li class="bold"><a href="#" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i> Calendar</a>
+        <li class="bold"><a class="waves-effect waves-cyan"><i class="mdi-action-announcement"></i> Notifications <span class="new badge">1</span></a>
+        </li>
+        <li class="bold"><a class="waves-effect waves-cyan"><i class="mdi-editor-insert-chart"></i> Sensor Statistics</a>
+        </li>
+        <li class="bold"><a class="waves-effect waves-cyan" href="maintenanceReps"><i class="mdi-editor-insert-comment"></i> Maintenance Reports</a>
+        </li>
+        <li class="bold"><a class="waves-effect waves-cyan" href="viewUsers"><i class="mdi-action-account-box"></i>Users</a>
+        </li>
+        <li class="li-hover"><div class="divider"></div></li>
+        <li class="li-hover"><p class="ultra-small margin more-text">MORE</p></li>
+        <li><a class="waves-effect waves-cyan" href="#"><i class="#"></i> User Activity</a>
+        </li>
+        <li><a class="waves-effect waves-cyan" href="#"><i class="#"></i> Help</a>
+        </li>
         @else
         <li class="bold">
             <li class="user-details cyan darken-2">
@@ -44,6 +60,7 @@
             </li>
                         
         </li>
+        <!--
         <li>
             <form class="login-form" role="form" method="POST" action="{{ route('login') }}">
             {{ csrf_field() }}
@@ -91,6 +108,7 @@
                 </div>
             </form>
         </li>
+        -->
         @endif
     </ul>
     @endif
